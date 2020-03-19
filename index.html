@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Testando o dialog do HTML6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="update-button" type="button">Novo usuário</button>
+
+    <!-- Modal com formulário de criar usuário -->
+    <dialog id="new-user-modal" class="new-user-modal">
+      <form id="new-user-form" method="dialog">
+        <section>
+          <p>
+            <label for="name">Nome:</label>
+            <input id="name" name="name" type="text" />
+          </p>
+          <p>
+            <label for="age">Idade:</label>
+            <input id="age" name="age" type="number" />
+          </p>
+          <p>
+            <label for="sex">Sexo:</label>
+            <select name="sex" id="sex">
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
+              <option value="3">Outro</option>
+            </select>
+          </p>
+        </section>
+
+        <menu>
+          <button id="cancel-button" type="reset">Cancelar</button>
+          <button type="submit">Criar</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
